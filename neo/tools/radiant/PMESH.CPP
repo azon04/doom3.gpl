@@ -1274,7 +1274,7 @@ brush_t * Cap( patchMesh_t *pParent,bool bByColumn,bool bFirst ) {
 
 	idVec3	vTemp;
 	for ( j = 0; j < 3; j++ ) {
-		vTemp[j] = vMin[j] + abs((vMax[j] - vMin[j]) * 0.5);
+		vTemp[j] = vMin[j] + fabs((vMax[j] - vMin[j]) * 0.5);
 	}
 
 	int	nCount	= (bSmall) ? Interior3ByCount : Interior5ByCount;
@@ -1332,7 +1332,7 @@ brush_t * CapSpecial( patchMesh_t *pParent,int nType,bool bFirst ) {
 	Patch_CalcBounds(pParent, vMin, vMax);
 
 	for ( j = 0; j < 3; j++ ) {
-		vTemp[j] = vMin[j] + abs((vMax[j] - vMin[j]) * 0.5);
+		vTemp[j] = vMin[j] + fabs((vMax[j] - vMin[j]) * 0.5);
 	}
 
 	if ( nType == CCapDialog::IBEVEL ) {
@@ -1537,7 +1537,7 @@ void GenerateEndCaps( brush_t *brushParent,bool bBevel,bool bEndcap,bool bInvert
 	}
 
 	for ( j = 0; j < 3; j++ ) {
-		vTemp[j] = vMin[j] + abs((vMax[j] - vMin[j]) * 0.5);
+		vTemp[j] = vMin[j] + fabs((vMax[j] - vMin[j]) * 0.5);
 	}
 
 	for ( i = 0; i < Interior3ByCount; i++ ) {
@@ -1878,8 +1878,8 @@ patchMesh_t * Patch_GenerateGeneric( int width,int height,int orientation,const 
 
 
 	int		xStep	= mins[nFirst];
-	float	xAdj	= abs((maxs[nFirst] - mins[nFirst]) / (width - 1));
-	float	yAdj	= abs((maxs[nSecond] - mins[nSecond]) / (height - 1));
+	float	xAdj	= fabs((maxs[nFirst] - mins[nFirst]) / (width - 1));
+	float	yAdj	= fabs((maxs[nSecond] - mins[nSecond]) / (height - 1));
 
 	for ( int i = 0; i < width; i++ ) {
 		int	yStep	= mins[nSecond];

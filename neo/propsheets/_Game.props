@@ -6,17 +6,17 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <PreprocessorDefinitions>__DOOM__;GAME_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>__DOOM__;GAME_DLL;_XKEYCHECK_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>
       </PrecompiledHeader>
     </ClCompile>
     <Link>
       <OutputFile>$(OutDir)gamex86.dll</OutputFile>
-      <ModuleDefinitionFile>.\game\game.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\..\game\game.def</ModuleDefinitionFile>
     </Link>
     <PreBuildEvent>
-      <Command>..\build\Win32\"$(Configuration)"\TypeInfo.exe</Command>
+      <Command>..\..\build\Win32\"$(Configuration)"\TypeInfo.exe</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
 </Project>

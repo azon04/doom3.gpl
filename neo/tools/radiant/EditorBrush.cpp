@@ -3414,7 +3414,7 @@ void Brush_Center(brush_t *b, idVec3 vNewCenter) {
 
 	// get center of the brush
 	for (int j = 0; j < 3; j++) {
-		vMid[j] = b->mins[j] + abs((b->maxs[j] - b->mins[j]) * 0.5f);
+		vMid[j] = b->mins[j] + fabs((b->maxs[j] - b->mins[j]) * 0.5f);
 	}
 
 	// calc distance between centers

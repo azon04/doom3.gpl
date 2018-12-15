@@ -9,48 +9,48 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TypeInfo\main.cpp">
+    <ClCompile Include="..\TypeInfo\main.cpp">
       <Filter>TypeInfo</Filter>
     </ClCompile>
-    <ClCompile Include="TypeInfo\TypeInfoGen.cpp">
+    <ClCompile Include="..\TypeInfo\TypeInfoGen.cpp">
       <Filter>TypeInfo</Filter>
     </ClCompile>
-    <ClCompile Include="framework\CmdSystem.cpp">
+    <ClCompile Include="..\framework\CmdSystem.cpp">
       <Filter>Framework</Filter>
     </ClCompile>
-    <ClCompile Include="framework\CVarSystem.cpp">
+    <ClCompile Include="..\framework\CVarSystem.cpp">
       <Filter>Framework</Filter>
     </ClCompile>
-    <ClCompile Include="framework\File.cpp">
+    <ClCompile Include="..\framework\File.cpp">
       <Filter>Framework</Filter>
     </ClCompile>
-    <ClCompile Include="framework\FileSystem.cpp">
+    <ClCompile Include="..\framework\FileSystem.cpp">
       <Filter>Framework</Filter>
     </ClCompile>
-    <ClCompile Include="framework\Unzip.cpp">
+    <ClCompile Include="..\framework\Unzip.cpp">
       <Filter>Framework</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TypeInfo\TypeInfoGen.h">
+    <ClInclude Include="..\TypeInfo\TypeInfoGen.h">
       <Filter>TypeInfo</Filter>
     </ClInclude>
-    <ClInclude Include="framework\CmdSystem.h">
+    <ClInclude Include="..\framework\CmdSystem.h">
       <Filter>Framework</Filter>
     </ClInclude>
-    <ClInclude Include="framework\CVarSystem.h">
+    <ClInclude Include="..\framework\CVarSystem.h">
       <Filter>Framework</Filter>
     </ClInclude>
-    <ClInclude Include="framework\File.h">
+    <ClInclude Include="..\framework\File.h">
       <Filter>Framework</Filter>
     </ClInclude>
-    <ClInclude Include="framework\FileSystem.h">
+    <ClInclude Include="..\framework\FileSystem.h">
       <Filter>Framework</Filter>
     </ClInclude>
-    <ClInclude Include="framework\Licensee.h">
+    <ClInclude Include="..\framework\Licensee.h">
       <Filter>Framework</Filter>
     </ClInclude>
-    <ClInclude Include="framework\Unzip.h">
+    <ClInclude Include="..\framework\Unzip.h">
       <Filter>Framework</Filter>
     </ClInclude>
   </ItemGroup>

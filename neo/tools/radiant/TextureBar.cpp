@@ -100,9 +100,9 @@ void CTextureBar::OnDeltaposSpinHshift(NMHDR* pNMHDR, LRESULT* pResult)
 	*pResult = 0;
 
   if (pNMUpDown->iDelta < 0)
-    Select_ShiftTexture(abs(g_qeglobals.d_savedinfo.m_nTextureTweak), 0);
+    Select_ShiftTexture(fabs(g_qeglobals.d_savedinfo.m_nTextureTweak), 0);
   else
-    Select_ShiftTexture(-abs(g_qeglobals.d_savedinfo.m_nTextureTweak), 0);
+    Select_ShiftTexture(-fabs(g_qeglobals.d_savedinfo.m_nTextureTweak), 0);
   GetSurfaceAttributes();
 }
 
@@ -113,9 +113,9 @@ void CTextureBar::OnDeltaposSpinVshift(NMHDR* pNMHDR, LRESULT* pResult)
 	
 	*pResult = 0;
   if (pNMUpDown->iDelta < 0)
-    Select_ShiftTexture(0, abs(g_qeglobals.d_savedinfo.m_nTextureTweak));
+    Select_ShiftTexture(0, fabs(g_qeglobals.d_savedinfo.m_nTextureTweak));
   else
-    Select_ShiftTexture(0, -abs(g_qeglobals.d_savedinfo.m_nTextureTweak));
+    Select_ShiftTexture(0, -fabs(g_qeglobals.d_savedinfo.m_nTextureTweak));
   GetSurfaceAttributes();
 }
 
@@ -126,9 +126,9 @@ void CTextureBar::OnDeltaposSpinHScale(NMHDR* pNMHDR, LRESULT* pResult)
 	
 	*pResult = 0;
   if (pNMUpDown->iDelta < 0)
-	  Select_ScaleTexture((float)abs(g_qeglobals.d_savedinfo.m_nTextureTweak),0);
+	  Select_ScaleTexture((float)fabs(g_qeglobals.d_savedinfo.m_nTextureTweak),0);
   else
-	  Select_ScaleTexture((float)-abs(g_qeglobals.d_savedinfo.m_nTextureTweak),0);
+	  Select_ScaleTexture((float)-fabs(g_qeglobals.d_savedinfo.m_nTextureTweak),0);
   GetSurfaceAttributes();
 }
 
@@ -139,9 +139,9 @@ void CTextureBar::OnDeltaposSpinVScale(NMHDR* pNMHDR, LRESULT* pResult)
 	
 	*pResult = 0;
   if (pNMUpDown->iDelta < 0)
-	  Select_ScaleTexture(0, (float)abs(g_qeglobals.d_savedinfo.m_nTextureTweak));
+	  Select_ScaleTexture(0, (float)fabs(g_qeglobals.d_savedinfo.m_nTextureTweak));
   else
-	  Select_ScaleTexture(0, (float)-abs(g_qeglobals.d_savedinfo.m_nTextureTweak));
+	  Select_ScaleTexture(0, (float)-fabs(g_qeglobals.d_savedinfo.m_nTextureTweak));
   GetSurfaceAttributes();
 }
 

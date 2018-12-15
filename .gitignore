@@ -1,1 +1,6 @@
 build
+neo/vs2017/.vs/
+neo/vs2015/.vs/
+*.VC.db
+neo/.vs/
+neo/ipch/
